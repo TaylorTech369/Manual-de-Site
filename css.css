@@ -1,9 +1,38 @@
+:root {
+    --verde-forte: #7cb636;
+    --verde-fraco: #cbddab;
+    --marrom: #845416;
+    --verde-escuro: #8ba15a;
+    --cinza-palido: #cec5ab;
+}
+
 * {
     margin: 0;
+    padding: 0;
+    
 }
 
 body {
-    background-color: blanchedalmond;
+    background-color: var(--cinza-palido);
     width: 100%;
     height: 100vh;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header-home {
+    display: flex;
+    background-color: var(--verde-forte);
+    width: 100%;
+    height: 100px;
+}
+
+#footer-home {
+    display: flex;
+    background-color: var(--marrom);
+    width: 100%;
+    height: 100px;
 }
