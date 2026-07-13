@@ -13,7 +13,8 @@
 }
 
 body {
-    background-color: var(--cinza-palido);
+    /* background: linear-gradient(180deg, var(--verde-forte), var(--marrom)); */
+    background-color: var(--verde-fraco);
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -23,16 +24,14 @@ body {
     justify-content: space-between;
 }
 
-#header-home {
+#header-home, #footer-home {
     display: flex;
-    background-color: var(--verde-forte);
+    background-color: var(--verde-escuro);
     width: 100%;
     height: 100px;
+    align-items: center;
+    color: var(--verde-forte);
+    text-shadow: 2px 2px black ;
 }
 
-#footer-home {
-    display: flex;
-    background-color: var(--marrom);
-    width: 100%;
-    height: 100px;
-}
+
