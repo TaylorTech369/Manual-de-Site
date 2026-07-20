@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorial 1: Tags — &lt;aprenda/&gt;</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand"><span class="bracket">&lt;</span>aprenda<span class="bracket">/&gt;</span></div>
+  <nav>
+    <a href="index.html">início</a>
+    <a href="tutorial-1.html">tutoriais</a>
+    <a href="#sobre">sobre</a>
+  </nav>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-label">trilha de tutoriais</div>
+    <div class="tutorial-list">
+      <a class="tutorial-item active" href="tutorial-1.html"><span class="dot"></span>tutorial 1</a>
+      <a class="tutorial-item" href="tutorial-2.html"><span class="dot"></span>tutorial 2</a>
+      <div class="tutorial-item locked"><span class="dot"></span>tutorial 3</div>
+      <div class="tutorial-item locked"><span class="dot"></span>tutorial 4</div>
+      <div class="tutorial-item locked"><span class="dot"></span>tutorial 5</div>
+      <div class="tutorial-item locked"><span class="dot"></span>tutorial 6</div>
+      <div class="tutorial-item locked"><span class="dot"></span>tutorial 7</div>
+    </div>
+    <div class="sidebar-footer"><span class="ver-mais">+ ver mais</span></div>
+  </aside>
+
+  <main class="content">
+    <div class="eyebrow">parte do tutorial 1</div>
+    <h1 class="tag-heading"><span class="bracket">&lt;</span>tags<span class="bracket">/&gt;</span></h1>
+    <p class="lede">
+      Toda página web é feita de tags. Elas dizem ao navegador o que cada pedaço de conteúdo é —
+      um título, um parágrafo, uma imagem — e como ele deve se comportar.
+    </p>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 1</span>
+      <h3>O que é uma tag e como ela funciona</h3>
+      <p>
+        Uma tag quase sempre vem em par: uma de abertura <code class="tag-mono">&lt;p&gt;</code> e uma de
+        fechamento <code class="tag-mono">&lt;/p&gt;</code>, com o conteúdo no meio. Algumas tags não têm
+        conteúdo, então não precisam de fechamento — como a <code class="tag-mono">&lt;img&gt;</code>,
+        que já se fecha sozinha.
+      </p>
+    </div>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 2</span>
+      <h3>A ordem e a orientação do que cada tag pode fazer</h3>
+      <p>
+        Toda página segue uma estrutura básica: <code class="tag-mono">&lt;html&gt;</code> envolve tudo,
+        <code class="tag-mono">&lt;head&gt;</code> guarda informações que o navegador usa mas não mostra
+        na tela, e <code class="tag-mono">&lt;body&gt;</code> é onde fica o conteúdo visível — títulos,
+        textos, imagens. As tags dentro do <code class="tag-mono">body</code> aparecem na página na mesma
+        ordem em que são escritas no código.
+      </p>
+    </div>
+
+    <div class="demo-wrap">
+      <div class="demo-tabs">
+        <div class="demo-tab active">cartão.html</div>
+        <div class="demo-tab">resultado</div>
+      </div>
+      <div class="demo-body">
+        <div class="demo-code"><span class="comment">&lt;!-- mini exemplo: um cartão de perfil --&gt;</span>
+&lt;<span class="tagname">div</span> <span class="attr">class</span>=<span class="str">"cartao"</span>&gt;
+  &lt;<span class="tagname">h2</span>&gt;Ana Souza&lt;/<span class="tagname">h2</span>&gt;
+  &lt;<span class="tagname">p</span>&gt;Aprendendo HTML e CSS 🌱&lt;/<span class="tagname">p</span>&gt;
+  &lt;<span class="tagname">button</span>&gt;Seguir&lt;/<span class="tagname">button</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;</div>
+        <div class="demo-preview">
+          <iframe srcdoc="
+            <style>
+              body{margin:0;display:flex;align-items:center;justify-content:center;height:100vh;
+                background:#FBF8F2;font-family:sans-serif;}
+              .cartao{background:#fff;border:1px solid #E4E0D6;border-radius:12px;padding:22px 26px;
+                width:220px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);}
+              .cartao h2{margin:0 0 6px;font-size:1.1rem;color:#1F2421;}
+              .cartao p{margin:0 0 14px;color:#6B6F76;font-size:0.9rem;}
+              .cartao button{background:#1F8F63;color:#fff;border:0;padding:8px 18px;border-radius:6px;
+                font-size:0.9rem;cursor:pointer;}
+            </style>
+            <div class='cartao'>
+              <h2>Ana Souza</h2>
+              <p>Aprendendo HTML e CSS 🌱</p>
+              <button>Seguir</button>
+            </div>
+          "></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 3</span>
+      <h3>O resultado do mini tutorial</h3>
+      <p>
+        O código acima gera o cartão que você vê do lado direito: um título, um texto e um botão,
+        exatamente na ordem em que foram escritos. Troque o texto entre as tags e o resultado muda
+        na mesma hora — é assim que HTML funciona.
+      </p>
+    </div>
+
+    <div class="curiosidade">
+      <b>Curiosidade:</b> existem mais de 100 tags HTML diferentes, mas no dia a dia você vai usar
+      só umas 20 delas o tempo todo. As outras aparecem aos poucos, conforme a necessidade.
+    </div>
+
+    <div class="nav-footer">
+      <a href="index.html">← início</a>
+      <a href="tutorial-2.html">tutorial 2: mais tags →</a>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>

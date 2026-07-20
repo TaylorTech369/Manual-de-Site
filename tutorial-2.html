@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorial 2: Mais tags — &lt;aprenda/&gt;</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .estrutura{
+    display:flex; align-items:center; gap:18px; margin-top:30px;
+    background: var(--paper); border:1px solid var(--line); border-radius: var(--radius);
+    padding: 20px 24px;
+  }
+  .estrutura p{ margin:0; color:var(--muted); font-size:0.92rem; max-width:280px; }
+  .estrutura-diagram{
+    font-family:'JetBrains Mono', monospace; font-size:0.78rem; background:var(--navy);
+    color:#CFE8DC; border-radius:8px; padding:14px 18px; line-height:1.9;
+  }
+  .estrutura-diagram .html{ color:var(--mint); }
+  .estrutura-diagram .head{ color:#F2C48A; padding-left:14px; display:block; }
+  .estrutura-diagram .body{ color:#E7A6C8; padding-left:14px; display:block; }
+  .estrutura-diagram .inner{ padding-left:28px; display:block; color:#8FA6B0; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand"><span class="bracket">&lt;</span>aprenda<span class="bracket">/&gt;</span></div>
+  <nav>
+    <a href="index.html">início</a>
+    <a href="tutorial-1.html">tutoriais</a>
+    <a href="#sobre">sobre</a>
+  </nav>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-label">trilha de tutoriais</div>
+    <div class="tutorial-list">
+      <a class="tutorial-item" href="tutorial-1.html"><span class="dot"></span>tutorial 1</a>
+      <a class="tutorial-item active" href="tutorial-2.html"><span class="dot"></span>tutorial 2</a>
+      <div class="tutorial-item locked"><span class="dot"></span>tutorial 3</div>
+      <div class="tutorial-item locked"><span class="dot"></span>tutorial 4</div>
+      <div class="tutorial-item locked"><span class="dot"></span>tutorial 5</div>
+      <div class="tutorial-item locked"><span class="dot"></span>tutorial 6</div>
+      <div class="tutorial-item locked"><span class="dot"></span>tutorial 7</div>
+    </div>
+    <div class="sidebar-footer"><span class="ver-mais">+ ver mais</span></div>
+  </aside>
+
+  <main class="content">
+    <div class="eyebrow">parte do tutorial 2</div>
+    <h1 class="tag-heading"><span class="bracket">&lt;</span>mais tags<span class="bracket">/&gt;</span></h1>
+    <p class="lede">
+      Agora que você já sabe o que é uma tag, é hora de conhecer mais algumas — só para você
+      reconhecer quando vir. Não precisa decorar nem usar todas ainda.
+    </p>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 1</span>
+      <h3>Novas tags para conhecer</h3>
+      <p>
+        <code class="tag-mono">&lt;h1&gt;</code> até <code class="tag-mono">&lt;h6&gt;</code> são títulos
+        em ordem de importância, <code class="tag-mono">&lt;a&gt;</code> cria um link,
+        <code class="tag-mono">&lt;ul&gt;</code> e <code class="tag-mono">&lt;li&gt;</code> criam listas.
+        Por enquanto é só para você reconhecer — vamos usá-las de verdade nos próximos tutoriais.
+      </p>
+    </div>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 2</span>
+      <h3>A ordem e a orientação do que cada tag pode fazer</h3>
+      <p>
+        Cada tag nova que você aprende entra dentro da mesma estrutura do tutorial 1: sempre dentro
+        do <code class="tag-mono">body</code>, sempre respeitando a ordem em que aparece no código.
+      </p>
+    </div>
+
+    <div class="estrutura">
+      <div class="estrutura-diagram">
+        <span class="html">&lt;html&gt;</span>
+        <span class="head">&lt;head&gt;</span>
+        <span class="body">&lt;body&gt;
+          <span class="inner">&lt;h1&gt;...&lt;/h1&gt;</span>
+          <span class="inner">&lt;ul&gt;...&lt;/ul&gt;</span>
+        &lt;/body&gt;</span>
+        &lt;/html&gt;
+      </div>
+      <p>A estrutura da página não muda — só cresce, com mais tags encaixadas na ordem certa.</p>
+    </div>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 3</span>
+      <h3>O resultado do mini tutorial</h3>
+      <p>
+        No próximo tutorial vamos pegar essas tags novas e realmente usá-las para montar uma
+        página com título, lista e link funcionando — com código e resultado lado a lado, como no
+        tutorial 1.
+      </p>
+    </div>
+
+    <div class="curiosidade">
+      <b>Curiosidade:</b> o <code class="tag-mono">&lt;h1&gt;</code> não é só o texto maior da página —
+      ele também ajuda o Google a entender qual é o assunto principal do conteúdo.
+    </div>
+
+    <div class="nav-footer">
+      <a href="tutorial-1.html">← tutorial 1</a>
+      <span class="tag-mono" style="color:var(--muted); font-size:0.85rem;">tutorial 3 em breve</span>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
